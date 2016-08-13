@@ -13,6 +13,7 @@ $('.atm').submit(function(event){
       giveCash = accCash - amount
       amount = amount + giveCash;
     }
+    $('#pin').val('')
     if($('#pin').val() < accCash){
       alert('balance in your account is' + giveCash)
     }
